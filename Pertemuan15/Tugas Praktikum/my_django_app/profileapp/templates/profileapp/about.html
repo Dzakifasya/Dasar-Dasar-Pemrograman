@@ -1,0 +1,32 @@
+{% extends 'profileapp/base.html' %}
+{% block content %}
+
+<div class="row">
+    <div class="col-md-4">
+        <div class="list-group shadow-sm">
+            <a href="{% url 'home' %}" class="list-group-item">Home</a>
+            <a href="{% url 'about' %}" class="list-group-item active">About Me</a>
+            <a href="{% url 'gallery' %}" class="list-group-item">Gallery</a>
+        </div>
+    </div>
+
+    <div class="col-md-8">
+        <div class="card shadow border-0">
+            <div class="card-body">
+                <h3 class="fw-bold mb-3">Tentang Saya</h3>
+                <p>
+                    Saya adalah mahasiswa Teknik Informatika yang tertarik
+                    pada pengembangan web dan teknologi modern.
+                </p>
+
+                <h5 class="mt-4">Visi & Misi</h5>
+                <ul>
+                    <li>Visi: Menjadi Web Developer Profesional</li>
+                    <li>Misi: Menguasai Django dan Web Development</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

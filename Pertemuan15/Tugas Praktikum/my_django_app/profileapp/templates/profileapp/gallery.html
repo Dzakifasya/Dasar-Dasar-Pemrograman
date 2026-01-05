@@ -1,0 +1,25 @@
+{% extends 'profileapp/base.html' %}
+{% load static %}
+{% block content %}
+
+<h2 class="fw-bold text-center mb-4">Gallery</h2>
+
+<div class="row row-cols-1 row-cols-md-3 g-4">
+    <div class="col">
+        <div class="card shadow">
+            <img src="{% static 'img/6.jpeg' %}" class="card-img-top">
+        </div>
+    </div>
+    <div class="col">
+        <div class="card shadow">
+            <img src="{% static 'img/10.jpeg' %}" class="card-img-top">
+        </div>
+    </div>
+    <div class="col">
+        <div class="card shadow">
+            <img src="{% static 'img/profile.jpg' %}" class="card-img-top">
+        </div>
+    </div>
+</div>
+
+{% endblock %}

@@ -1,0 +1,17 @@
+{% extends 'index.html' %}
+{% block content %}
+
+<form>
+  <div class="mb-3 d-grid gap-2 col-3 mx-auto">
+    <label for="text" class="form-label">Username</label>
+    <input type="email" class="form-control" id="text"  placeholder="Masukkan User Anda!" required>
+    <div id="emailHelp" class="form-text">Login menggunakan nama teregristrasi</div>
+  </div>
+  <div class="mb-3 d-grid gap-2 col-3 mx-auto">
+    <label for="exampleInputPassword1" class="form-label">Password</label>
+    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Masukkan Password Anda!" required>
+  </div>
+  <button type="submit" class="btn btn-primary d-grid gap-2 col-0 mx-auto">Login</button>
+</form>
+
+{% endblock %}
