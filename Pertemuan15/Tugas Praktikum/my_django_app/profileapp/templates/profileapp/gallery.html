@@ -4,20 +4,63 @@
 
 <h2 class="fw-bold text-center mb-4">Gallery</h2>
 
+<style>
+    /* Bisa dipindah ke style.css kalau mau permanen */
+    .gallery-card {
+        border-radius: 15px;
+        overflow: hidden;
+    }
+
+    .gallery-card img {
+        width: 100%;
+        height: 260px;
+        /* ubah tinggi di sini jika mau lebih tinggi/rendah */
+        object-fit: cover;
+        /* biar gambar rapi dan tidak gepeng */
+        display: block;
+    }
+
+    .gallery-caption {
+        padding: 12px 16px;
+    }
+
+    .gallery-caption .card-text {
+        margin: 0;
+        font-weight: 700;
+        /* teks tebal */
+        font-size: 1rem;
+        /* ukuran font */
+        letter-spacing: 0.02em;
+        /* sedikit jarak antar huruf */
+        font-family: "Poppins", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        text-align: center;
+        /* rata tengah */
+    }
+</style>
+
 <div class="row row-cols-1 row-cols-md-3 g-4">
     <div class="col">
-        <div class="card shadow">
-            <img src="{% static 'img/6.jpeg' %}" class="card-img-top">
+        <div class="card shadow gallery-card text-center">
+            <img src="{% static 'img/4.png' %}" class="card-img-top" alt="Foto 1">
+            <div class="card-body gallery-caption">
+                <p class="card-text">Presentasi Linux</p>
+            </div>
         </div>
     </div>
     <div class="col">
-        <div class="card shadow">
-            <img src="{% static 'img/10.jpeg' %}" class="card-img-top">
+        <div class="card shadow gallery-card text-center">
+            <img src="{% static 'img/BRIN3.jpeg' %}" class="card-img-top" alt="Foto 2">
+            <div class="card-body gallery-caption">
+                <p class="card-text">Praktikum Networking BRIN</p>
+            </div>
         </div>
     </div>
     <div class="col">
-        <div class="card shadow">
-            <img src="{% static 'img/profile.jpg' %}" class="card-img-top">
+        <div class="card shadow gallery-card text-center">
+            <img src="{% static 'img/BRIN.jpeg' %}" class="card-img-top" alt="Foto 3">
+            <div class="card-body gallery-caption">
+                <p class="card-text">Monitoring Server BRIN</p>
+            </div>
         </div>
     </div>
 </div>
